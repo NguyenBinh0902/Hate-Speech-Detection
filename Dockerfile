@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y wget
 RUN wget -O embeddings_index-001.pkl "https://firebasestorage.googleapis.com/v0/b/jewelry-shop-781c0.appspot.com/o/embeddings_index-001.pkl?alt=media&token=9365f5e7-71af-405d-96d1-5281850fdb51"
 
 # Expose the port that the app runs on
-EXPOSE 5000
+EXPOSE 8080
 
 # Define environment variable
 ENV FLASK_APP=my_api.py
